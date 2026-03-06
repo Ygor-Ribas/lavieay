@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.tituloCabecalho {
+  font-size: 28px;
+  color: #7a1f7a;
+  white-space: nowrap;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.iconesCabecalho {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.iconesCabecalho a {
+  text-decoration: none;
+  color: black;
+}
+
+.iconesCabecalho img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+img{
+    width: 23px;
+}
+
+.logincabecalho {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+
+  border: 1px solid black;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.hero {
+  background-image: url("imagens/maos.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.conteudo h1{
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.conteudo p{
+    font-size: 18px;
+    color: white;
+    max-width: 700px;
+    margin-bottom: 25px;
+    font-weight: 100px;
+}
+
+.hero a{
+    text-decoration: none;
+    background-color: white;
+    color: purple;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    display: flex;
+}
+
+
+
+   
