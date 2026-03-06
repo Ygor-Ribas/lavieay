@@ -105,6 +105,45 @@ img{
     display: flex;
 }
 
+@media (max-width: 768px){
+
+  .cabecalho{
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .menu{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .iconesCabecalho{
+    justify-content: center;
+  }
+
+  .conteudo h1{
+    font-size: 32px;
+  }
+
+  .conteudo p{
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .hero{
+    min-height: 350px;
+  }
+
+  .hero a{
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+  }
+
+}
+
 
 
    
