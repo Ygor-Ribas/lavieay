@@ -105,6 +105,59 @@ img{
     display: flex;
 }
 
+.nossosProdutos{
+  padding: 80px 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.nossosProdutos h1{
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.nossosProdutos p{
+  font-size: 20px;
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+
+.cardsCategorias{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cardCategoria{
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  width: 500px;
+  padding: 30px;
+  text-align: center;
+}
+
+.cardCategoria img{
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.cardCategoria h3{
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.cardCategoria p{
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.5;
+  padding: ;
+}
+
 @media (max-width: 768px){
 
   .cabecalho{
