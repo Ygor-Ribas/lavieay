@@ -215,6 +215,40 @@ html {
   border-radius: 18px;
 }
 
+.contatos{
+  background-color: #B800FF;
+  padding: 100px;
+  text-align: center;
+}
+
+.contatos h2{
+  color: white;
+  margin-bottom: -20px;
+  font-size: 40px;
+}
+
+.contatos p{
+  color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.contatos a{
+  border: none;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  color: #B800FF;
+  font-size: 18px;
+  text-decoration: none;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contatos a :hover{
+  transform: translateY(-8px);
+}
+
 @media (max-width: 768px){
 
   .cabecalho{
