@@ -82,7 +82,7 @@ body {
   box-shadow: 0 0 0 3px rgba(122, 22, 131, 0.1);
 }
 
-.login2 a:first-of-type {
+.link-recuperar {
   font-size: 13px;
   color: #7a1683;
   text-decoration: none;
@@ -91,11 +91,11 @@ body {
   margin-bottom: 6px;
 }
 
-.login2 a:first-of-type:hover {
+.link-recuperar:hover {
   text-decoration: underline;
 }
 
-.login2 a:last-child {
+.botao-entrar {
   background: linear-gradient(180deg, #a000a0, #7a007a);
   color: white;
   text-align: center;
@@ -110,9 +110,33 @@ body {
   transition: 0.2s;
 }
 
-.login2 a:last-child:hover {
+.botao-entrar:hover {
   transform: translateY(-1px);
   opacity: 0.96;
+}
+
+.link-cadastro {
+  font-size: 14px;
+  color: #7a1683;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.link-cadastro:hover {
+  text-decoration: underline;
+}
+
+.link-cadastro {
+  font-size: 14px;
+  color: #7a1683;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.link-cadastro:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
