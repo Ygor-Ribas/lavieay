@@ -129,6 +129,7 @@ body {
   line-height: 1.5;
   color: #6b7280;
   margin-bottom: 18px;
+  min-height: 90px;
 }
 
 .preco {
@@ -136,13 +137,14 @@ body {
   font-weight: bold;
   color: #7a1683;
   margin-bottom: 18px;
+  margin-top: auto;
 }
 
 .botoes-produto {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 .btn-principal,
