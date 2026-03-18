@@ -47,6 +47,15 @@ function pegarDadosDoProduto(botao) {
   };
 }
 
+function mostrarAlerta(mensagem) {
+  document.getElementById("alerta-texto").textContent = mensagem;
+  document.getElementById("alerta-custom").style.display = "flex";
+}
+
+function fecharAlerta() {
+  document.getElementById("alerta-custom").style.display = "none";
+}
+
 const botoesAdicionar = document.querySelectorAll(".adicionar-carrinho");
 const botoesComprar = document.querySelectorAll(".comprar-agora");
 
@@ -54,7 +63,7 @@ botoesAdicionar.forEach((botao) => {
   botao.addEventListener("click", () => {
     const produto = pegarDadosDoProduto(botao);
     adicionarProdutoAoCarrinho(produto);
-    alert("Produto adicionado ao carrinho!");
+    mostrarAlerta("Produto adicionado ao carrinho!");
   });
 });
 
