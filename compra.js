@@ -1,3 +1,5 @@
+let compraFinalizada = false;
+
 function pegarCarrinho() {
   return JSON.parse(localStorage.getItem("carrinho")) || [];
 }
@@ -42,6 +44,19 @@ function renderizarCompra() {
   totalCompra.textContent = `Total da compra: R$ ${total.toFixed(2)}`;
 }
 
+function mostrarAlerta(mensagem) {
+  document.getElementById("alerta-texto").textContent = mensagem;
+  document.getElementById("alerta-custom").style.display = "flex";
+}
+
+function fecharAlerta() {
+  document.getElementById("alerta-custom").style.display = "none";
+
+  if (compraFinalizada) {
+    window.location.href = "indexPagina.html";
+  }
+}
+
 function finalizarCompra() {
   const nome = document.getElementById("nome").value.trim();
   const endereco = document.getElementById("endereco").value.trim();
@@ -53,28 +68,18 @@ function finalizarCompra() {
   const carrinho = pegarCarrinho();
 
   if (carrinho.length === 0) {
-    alert("Seu carrinho está vazio.");
+    mostrarAlerta("Seu carrinho está vazio.");
     return;
   }
 
   if (!nome || !endereco || !numero || !bairro || !cidade || !pagamento) {
-    alert("Preencha todos os campos para finalizar a compra.");
+    mostrarAlerta("Preencha todos os campos para finalizar a compra.");
     return;
   }
 
-  alert("Compra finalizada com sucesso!");
-
   localStorage.removeItem("carrinho");
-  window.location.href = "indexPagina.html";
-}
-
-function mostrarAlerta(mensagem) {
-  document.getElementById("alerta-texto").textContent = mensagem;
-  document.getElementById("alerta-custom").style.display = "flex";
-}
-
-function fecharAlerta() {
-  document.getElementById("alerta-custom").style.display = "none";
+  compraFinalizada = true;
+  mostrarAlerta("Compra finalizada com sucesso!");
 }
 
 document
