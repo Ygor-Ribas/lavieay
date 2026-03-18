@@ -108,6 +108,7 @@ body {
   font-weight: bold;
   margin-top: 6px;
   transition: 0.2s;
+  border: none;
 }
 
 .botao-entrar:hover {
