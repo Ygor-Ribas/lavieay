@@ -31,6 +31,7 @@ document.querySelector(".botao-entrar").addEventListener("click", () => {
 
   if (email === usuarioSalvo.email && senha === usuarioSalvo.senha) {
     loginValido = true;
+    localStorage.setItem("logado", "true");
     mostrarAlerta("Login realizado com sucesso!");
   } else {
     mostrarAlerta("Email ou senha incorretos!");
