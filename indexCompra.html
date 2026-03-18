@@ -45,10 +45,19 @@
             <option>Boleto</option>
           </select>
 
-          <button type="button" id="btn-finalizar-compra">Finalizar compra</button>
+          <button type="button" id="btn-finalizar-compra">
+            Finalizar compra
+          </button>
         </form>
       </section>
     </main>
+
+    <div id="alerta-custom" class="alerta">
+      <div class="alerta-box">
+        <p id="alerta-texto"></p>
+        <button onclick="fecharAlerta()">OK</button>
+      </div>
+    </div>
 
     <script src="compra.js"></script>
   </body>

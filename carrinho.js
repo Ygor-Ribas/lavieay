@@ -84,4 +84,23 @@ function removerItem(index) {
   renderizarCarrinho();
 }
 
+function mostrarAlerta(mensagem) {
+  document.getElementById("alerta-texto").textContent = mensagem;
+  document.getElementById("alerta-custom").style.display = "flex";
+}
+
+function fecharAlerta() {
+  document.getElementById("alerta-custom").style.display = "none";
+}
+
+function removerItem(index) {
+  const carrinho = pegarCarrinho();
+
+  carrinho.splice(index, 1);
+
+  salvarCarrinho(carrinho);
+  renderizarCarrinho();
+  mostrarAlerta("Produto removido do carrinho!");
+}
+
 renderizarCarrinho();
