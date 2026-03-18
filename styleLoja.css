@@ -450,3 +450,181 @@ html {
   font-weight: bold;
   color: #111827;
 }
+
+.acoes-carrinho {
+  max-width: 900px;
+  margin: 30px auto 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn-voltar-comprando,
+.btn-continuar-compra {
+  flex: 1;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+  text-align: center;
+}
+
+/* Botão branco (voltar) */
+.btn-voltar-comprando {
+  background-color: white;
+  border: 1px solid #7a1683;
+  color: #7a1683;
+}
+
+/* Botão roxo (principal) */
+.btn-continuar-compra {
+  background: linear-gradient(180deg, #a000a0, #7a007a);
+  color: white;
+}
+
+/* Hover bonito */
+.btn-voltar-comprando:hover,
+.btn-continuar-compra:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .acoes-carrinho {
+    flex-direction: column;
+  }
+
+  .btn-voltar-comprando,
+  .btn-continuar-compra {
+    width: 100%;
+  }
+}
+
+.pagina-compra {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+}
+
+.resumo-compra,
+.dados-compra {
+  background-color: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.resumo-compra h1,
+.dados-compra h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+#lista-compra {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.item-resumo-compra {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.item-resumo-compra img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-resumo-compra {
+  flex: 1;
+}
+
+.info-resumo-compra h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.info-resumo-compra p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.subtotal-produto {
+  font-weight: bold;
+  color: #7a1683 !important;
+  margin-top: 8px;
+}
+
+#total-compra {
+  margin-top: 25px;
+  font-size: 24px;
+  color: #111827;
+}
+
+#form-compra {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#form-compra label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+#form-compra input,
+#form-compra select {
+  height: 46px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  background-color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+#form-compra input:focus,
+#form-compra select:focus {
+  border-color: #7a1683;
+  box-shadow: 0 0 0 3px rgba(122, 22, 131, 0.1);
+}
+
+#btn-finalizar-compra {
+  margin-top: 12px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #a000a0, #7a007a);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#btn-finalizar-compra:hover {
+  transform: translateY(-2px);
+  opacity: 0.96;
+}
+
+@media (max-width: 900px) {
+  .pagina-compra {
+    grid-template-columns: 1fr;
+  }
+}
