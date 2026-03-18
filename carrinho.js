@@ -103,4 +103,15 @@ function removerItem(index) {
   mostrarAlerta("Produto removido do carrinho!");
 }
 
+function irParaCompra() {
+  const carrinho = pegarCarrinho();
+
+  if (carrinho.length === 0) {
+    mostrarAlerta("Seu carrinho está vazio!");
+    return;
+  }
+
+  window.location.href = "indexCompra.html";
+}
+
 renderizarCarrinho();

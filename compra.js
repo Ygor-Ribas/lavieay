@@ -68,6 +68,15 @@ function finalizarCompra() {
   window.location.href = "indexPagina.html";
 }
 
+function mostrarAlerta(mensagem) {
+  document.getElementById("alerta-texto").textContent = mensagem;
+  document.getElementById("alerta-custom").style.display = "flex";
+}
+
+function fecharAlerta() {
+  document.getElementById("alerta-custom").style.display = "none";
+}
+
 document
   .getElementById("btn-finalizar-compra")
   .addEventListener("click", finalizarCompra);
